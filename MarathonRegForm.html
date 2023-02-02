@@ -8,9 +8,49 @@
   </head>
   <body>
     <p>
+      <h1>Marathon Registration Form</h1>
         <form action="/registered">
+          <p>
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" id="firstName" required>
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lastName" id="lastName" required>
+          </p>
+          <div>
+          <legend>Select a Race length:</legend>
+          <p>
+          <input type="radio" name="raceType" id="funRun" value="funRun">
+           <label for="raceType">5k Fun Run</label>
+          </p>
+          <p>
+          <input type="radio" name="raceType" id="HalfMarathon" value="HalfMarathon">
+          <label for="raceType">Half Marathon</label>
+          </p>
+          <p>
+          <input type="radio" name="raceType" id="FullMarathon" value="FullMarathon">
+          <label for="raceType">Full Marathon</label>
+          </p>
+        </div>
+        <div>
+          <label for="emailAddress">Email:</label>
+        <input type="email" name="emailAddress" id="emailAddress" required>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        </div>
+        <p>
+        <label for="AgeGroup">Select Age Range:</label>
+          <select name="AgeGroup" id="AgeGroup">
+            <option value="">--Please Select Age Range--</option>
+            <option value="under18">under 18</option>
+            <option value="19-24">19 to 24</option>
+            <option value="25+">25 and Up</option>
+            <option value="65+">Seniors (65+)</option>
+          </select>
+        </p>
+            <p>
             <button>Submit</button>
+            </p>
         </form>
-    </p> <div></div>
+    </p> 
   </body>
 </html>
